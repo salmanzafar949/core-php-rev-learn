@@ -1,5 +1,5 @@
 <?php
 
-$greeting = "Hello";
+$greeting = "Hello World";
 
-echo $greeting;
+require "index.view.php";
