@@ -1,8 +1,9 @@
 <?php
+
 require "functions.php";
 
 $greeting = "Hello World";
 
-dd($greeting);
+//dd($greeting);
 
 require "index.view.php";
