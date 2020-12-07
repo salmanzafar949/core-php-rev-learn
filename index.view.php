@@ -18,5 +18,18 @@
 <header>
     <h1> <?= $greeting ?> </h1>
 </header>
+<ul>
+    <?php foreach ($todos as $todo) :?>
+     <li>
+         <?php if ($todo->isCompleted()):?>
+            <strike>
+                <?= $todo->description ?>
+            </strike>
+         <?php else :?>
+          <?= $todo->description ?>
+         <?php endif?>
+     </li>
+    <?php endforeach?>
+</ul>
 </body>
 </html>

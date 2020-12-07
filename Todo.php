@@ -19,6 +19,6 @@ class Todo
 
     public function complete(): bool
     {
-        return $this->isCompleted = true;
+        $this->isCompleted = true;
     }
 }
