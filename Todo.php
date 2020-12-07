@@ -17,7 +17,7 @@ class Todo
         return $this->isCompleted;
     }
 
-    public function complete(): bool
+    public function complete() : void
     {
         $this->isCompleted = true;
     }
