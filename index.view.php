@@ -21,7 +21,7 @@
 <ul>
     <?php foreach ($todos as $todo) :?>
      <li>
-         <?php if ($todo->isCompleted()):?>
+         <?php if ($todo->isCompleted):?>
             <strike>
                 <?= $todo->description ?>
             </strike>
