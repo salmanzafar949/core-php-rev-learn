@@ -1,13 +1,9 @@
 <?php
 
-require "Todo.php";
-require "database/Connection.php";
-require "database/QueryBuilder.php";
+$query = require "bootstrap.php";
 
 $greeting = "Hello World";
 
-$pdoConn = Connection::make();
-$query = new QueryBuilder($pdoConn);
 $todos = $query->all('todos');
 
 var_dump($todos);

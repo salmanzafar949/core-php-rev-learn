@@ -10,7 +10,7 @@ class QueryBuilder
         $this->PDO = $PDO;
     }
 
-    public function all($table)
+    public function all($table): array
     {
         $statement = $this->PDO->prepare("select * from {$table}");
 
