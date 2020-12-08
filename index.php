@@ -1,13 +1,14 @@
 <?php
 
-require "functions.php";
 require "Todo.php";
 require "database/Connection.php";
+require "database/QueryBuilder.php";
 
 $greeting = "Hello World";
 
 $pdoConn = Connection::make();
-$todos = fetchAllTasks($pdoConn);
+$query = new QueryBuilder($pdoConn);
+$todos = $query->all('todos');
 
 var_dump($todos);
 /*$todos  = [
