@@ -2,10 +2,11 @@
 
 require "functions.php";
 require "Todo.php";
+require "database/Connection.php";
 
 $greeting = "Hello World";
 
-$pdoConn = connectToDb();
+$pdoConn = Connection::make();
 $todos = fetchAllTasks($pdoConn);
 
 var_dump($todos);
