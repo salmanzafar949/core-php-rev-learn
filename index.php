@@ -6,7 +6,6 @@ $greeting = "Hello World";
 
 $todos = $query->all('todos');
 
-var_dump($todos);
 /*$todos  = [
     new Todo('Learn Core Php'),
     new Todo('Learn Laravel', true),
