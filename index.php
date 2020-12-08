@@ -3,7 +3,6 @@
 require "functions.php";
 require "Todo.php";
 
-
 $greeting = "Hello World";
 
 $pdoConn = connectToDb();
